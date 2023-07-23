@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaBars, FaSearch, FaTimes } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +19,11 @@ const Header = () => {
 
         <div className="order-2">
           <ul className="hidden md:flex flex-col md:flex-row gap-3 xl:gap-5 xl:text-lg uppercase">
-            <li>Home</li>
-            <li>Colleges</li>
-            <li>Admission</li>
-            <li>My College</li>
-            <li>Blog</li>
+            <NavLink to={'/'}>Home</NavLink>
+            <NavLink to={'colleges'}>Colleges</NavLink>
+            <NavLink>Admission</NavLink>
+            <NavLink>My College</NavLink>
+            <NavLink>Blog</NavLink>
           </ul>
 
           {/* Toggle nav */}

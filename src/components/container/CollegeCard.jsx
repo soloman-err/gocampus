@@ -17,7 +17,7 @@ const CollegeCard = ({ college }) => {
           </div>
           <div className="text-sm mb-4">
             <span className="font-semibold">Events: </span>
-            {college?.events.map((event, index) => (
+            {college?.events?.map((event, index) => (
               <span key={index} className="mr-2">
                 {event}
               </span>
@@ -26,14 +26,14 @@ const CollegeCard = ({ college }) => {
           <div className="text-sm mb-4">
             <span className="font-semibold">Research History: </span>
             <ul>
-              {college?.researchHistory.map((research, index) => (
+              {college?.researchHistory?.map((research, index) => (
                 <li key={index}>{research}</li>
               ))}
             </ul>
           </div>
           <div className="text-sm mb-4">
             <span className="font-semibold">Sports: </span>
-            {college?.sports.map((sport, index) => (
+            {college?.sports?.map((sport, index) => (
               <span key={index} className="mr-2">
                 {sport}
               </span>
@@ -42,7 +42,7 @@ const CollegeCard = ({ college }) => {
         </div>
       </div>
 
-      <Link to={'college-details'}>
+      <Link to={'/college-details'}>
         <button className="btn w-full btn-sm rounded-none mt-auto">
           Details
         </button>
