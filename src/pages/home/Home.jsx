@@ -1,15 +1,13 @@
-import Footer from '../../shared/footer/Footer';
-import Header from '../../shared/header/Header';
 import Featured from './Featured';
+import Graduates from './Graduates';
 import Hero from './Hero';
 
 const Home = () => {
   return (
-    <div className="md:relative">
-      <Header />
+    <div>
       <Hero />
       <Featured/>
-      <Footer />
+      <Graduates/>
     </div>
   );
 };

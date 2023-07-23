@@ -13,7 +13,7 @@ const Header = () => {
       {/* Navigation */}
       <nav className="flex justify-between items-center font-semibold">
         <div className="order-1">
-          <img className="w-24 md:w-40" src="/gocampus.png" alt="gocampus-logo" />
+          <img className="w-24 md:w-32" src="/gocampus.png" alt="gocampus-logo" />
         </div>
 
         <div className="order-2">
@@ -81,7 +81,7 @@ const Header = () => {
       </nav>
 
       {/* Search */}
-      <div className="hidden md:flex justify-center items-center gap-2">
+      <div className="hidden md:flex justify-center items-center gap-2 border-t border-slate-300 mt-2 pt-2">
         <input
           className="w-80 text-sm outline-none px-1 border-2 rounded-xl text-black"
           type="search"

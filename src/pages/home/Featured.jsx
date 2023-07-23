@@ -3,10 +3,10 @@ import CollegeCard from '../../components/container/CollegeCard';
 const Featured = () => {
   const colleges = [
     {
-      name: 'ABC University',
+      name: 'Boston University',
       imageUrl:
         'https://www.cnu.org/sites/default/files/styles/public_square_feature_image/public/BostonCollege1.jpg',
-      admissionDates: 'Fall 20XX - Spring 20XX',
+      admissionDates: 'Fall 2023 - Spring 2023',
       events: ['Open House Day', 'Scholarship Fair', 'Alumni Reunion'],
       researchHistory: [
         'Biotechnology',
@@ -16,9 +16,9 @@ const Featured = () => {
       sports: ['Football', 'Basketball', 'Swimming', 'Track & Field'],
     },
     {
-      name: 'XYZ College',
+      name: 'Horizon Campus',
       imageUrl: 'https://i.ytimg.com/vi/M4gx72b8IbM/maxresdefault.jpg',
-      admissionDates: 'Summer 20XX - Winter 20XX',
+      admissionDates: 'Summer 2023 - Winter 2023',
       events: ['New Student Orientation', 'Career Fair', 'Cultural Fest'],
       researchHistory: [
         'Environmental Studies',
@@ -28,10 +28,10 @@ const Featured = () => {
       sports: ['Soccer', 'Tennis', 'Volleyball', 'Cross-country'],
     },
     {
-      name: 'PQR Institute',
+      name: 'Lancaster University',
       imageUrl:
         'https://media.studentcrowd.net/q90/content/Pages/Articles/uni-awards-21-uni-pics/lancaster-uni.jpeg',
-      admissionDates: 'Spring 20XX - Fall 20XX',
+      admissionDates: 'Spring 2023 - Fall 2023',
       events: [
         'Campus Carnival',
         'Leadership Conference',
