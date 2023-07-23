@@ -1,5 +1,6 @@
 import Footer from '../../shared/footer/Footer';
 import Header from '../../shared/header/Header';
+import Featured from './Featured';
 import Hero from './Hero';
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <div className="md:relative">
       <Header />
       <Hero />
+      <Featured/>
       <Footer />
     </div>
   );
