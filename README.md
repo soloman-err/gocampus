@@ -4,4 +4,4 @@ GOCAMPUS servers you with the latest updates of campuses/universities worldwide.
 
 Currently, beta version available:
 
-- https://gocampus.netlify.app
+- [https://gocampus.netlify.app]
