@@ -19,15 +19,15 @@ const Research = () => {
   ];
 
   return (
-    <section className="bg-gray-100 mt-20 px-5 md:px-20">
+    <section className="w-[80%] mx-auto mt-20 px-5 md:px-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-semibold mb-4">
+        <h2 className="text-2xl font-bold mb-4 text-center">
           Recommended Research Papers
         </h2>
         <div className="grid gap-4">
           {researchPapers.map((paper) => (
-            <div key={paper.id} className="bg-white p-4 shadow-md rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">{paper.title}</h3>
+            <div key={paper.id} className="bg-white py-12 px-8 shadow-lg rounded-lg">
+              <h3 className="text-xl font-bold mb-2 uppercase">{paper.title}</h3>
               <a
                 href={paper.link}
                 target="_blank"
