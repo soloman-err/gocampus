@@ -1,19 +1,21 @@
 import { Link } from 'react-router-dom';
 
 const CollegeCard = ({ college }) => {
+  console.log(college);
+
   return (
-    <div className="w-[80%] md:w-full xl:w-[80%] mx-auto flex flex-col justify-between bg-white shadow-lg overflow-hidden">
+    <div className="w-[80%] md:w-full xl:w-[80%] mx-auto flex flex-col justify-between bg-white shadow-lg overflow-hidden h-full">
       <div className="rounded overflow-hidden">
         <img
           className="w-full h-40 object-cover"
-          src={college?.imageUrl}
+          src={college?.image}
           alt={college?.name}
         />
         <div className="px-3 py-4">
           <div className="font-bold text-xl mb-2">{college?.name}</div>
           <div className="text-sm mb-4">
             <span className="font-semibold">Admission Dates: </span>
-            {college?.admissionDates}
+            {college?.admissionDate}
           </div>
           <div className="text-sm mb-4">
             <span className="font-semibold">Events: </span>
