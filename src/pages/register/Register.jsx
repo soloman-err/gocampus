@@ -1,4 +1,4 @@
-import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
@@ -43,7 +43,7 @@ const SignUp = () => {
         Swal.fire({
           position: 'top-end',
           icon: 'success',
-          title: 'Welcome to oldschool!',
+          title: 'Welcome to gocampus!',
           showConfirmButton: false,
           timer: 1000,
         });
@@ -56,9 +56,9 @@ const SignUp = () => {
 
   return (
     <>
-      {/* <Helmet>
-        <title>oldschool | Register</title>
-      </Helmet> */}
+      <Helmet>
+        <title>gocampus | Register</title>
+      </Helmet>
       <div className="flex justify-center items-center mt-5">
         <div className="bg-white shadow-2xl rounded-xl px-8 pt-6 pb-8 mb-4 space-y-1 border">
           <form className="w-full" onSubmit={handleSubmit(onSubmit)}>
