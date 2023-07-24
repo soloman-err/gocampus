@@ -14,72 +14,72 @@ const Reviews = () => {
   const collegeReviews = [
     {
       id: 1,
-      collegeName: 'ABC University',
+      collegeName: 'Sarah Johnson',
       review:
-        'I had a great experience at ABC University. The faculty was knowledgeable, and the campus had excellent facilities.',
+        'I had a great experience at (MIT). The faculty was knowledgeable, and the campus had excellent facilities.',
       rating: 4.5,
     },
     {
       id: 2,
-      collegeName: 'XYZ College',
+      collegeName: 'Robert Wilson',
       review:
-        'XYZ College provided a supportive learning environment. However, the course offerings could be more diverse.',
+        'ETH Zurich College provided a supportive learning environment. However, the course offerings could be more diverse.',
       rating: 3.8,
     },
     {
       id: 3,
-      collegeName: 'DEF Institute',
+      collegeName: 'Jennifer Lee',
       review:
-        'DEF Institute has fantastic research opportunities, but the class sizes were quite large.',
+        'University of Tokyo has fantastic research opportunities, but the class sizes were quite large.',
       rating: 4.0,
     },
     {
       id: 4,
-      collegeName: 'EFG Academy',
+      collegeName: 'Michael Williams',
       review:
-        'EFG Academy offers a wide range of extracurricular activities, making campus life enjoyable.',
+        'Caltech offers a wide range of extracurricular activities, making campus life enjoyable.',
       rating: 4.2,
     },
     {
       id: 5,
-      collegeName: 'LMN College',
+      collegeName: 'David Anderson',
       review:
-        'LMN College has a friendly atmosphere, and the professors are always ready to help.',
+        'University of Oxford has a friendly atmosphere, and the professors are always ready to help.',
       rating: 4.7,
     },
     {
       id: 6,
-      collegeName: 'PQR University',
+      collegeName: 'John Smith',
       review:
         'PQR University provides state-of-the-art facilities, and the campus is well-maintained.',
       rating: 4.9,
     },
     {
       id: 7,
-      collegeName: 'UVW College',
+      collegeName: 'Amanda Thomas',
       review:
-        'UVW College offers a diverse range of courses, and the career services are exceptional.',
+        'Stanford University offers a diverse range of courses, and the career services are exceptional.',
       rating: 4.4,
     },
     {
       id: 8,
-      collegeName: 'JKL Institute',
+      collegeName: 'Jessica Martinez',
       review:
-        'JKL Institute has a rigorous academic program, but the campus lacks proper parking facilities.',
+        'University of Toronto has a rigorous academic program, but the campus lacks proper parking facilities.',
       rating: 3.5,
     },
     {
       id: 9,
-      collegeName: 'RST University',
+      collegeName: 'Christopher Davis',
       review:
-        'RST Universitys professors are highly experienced, and the research opportunities are unmatched.',
+        'NUS professors are highly experienced, and the research opportunities are unmatched.',
       rating: 4.8,
     },
     {
       id: 10,
-      collegeName: 'MNO College',
+      collegeName: 'Emily Brown',
       review:
-        'MNO College has a vibrant student community, and the sports facilities are top-notch.',
+        'Harvard University has a vibrant student community, and the sports facilities are top-notch.',
       rating: 4.3,
     },
   ];
@@ -135,13 +135,13 @@ const Reviews = () => {
               className="bg-gray-100 p-4 shadow-md rounded-lg"
               key={review.id}
             >
-              <h3 className="text-xl font-semibold mb-2">
-                {review.collegeName}
+              <h3 className="text-xl font-bold mb-2">
+                {review?.collegeName}
               </h3>
-              <p className="mb-4">{review.review}</p>
+              <p className="mb-4">{review?.review}</p>
               <div className="flex items-center">
                 <span className="mr-2">Rating:</span>
-                <span className="text-yellow-500">{review.rating}</span>
+                <span className="text-yellow-500">{review?.rating}</span>
                 <span className="ml-1 text-sm">/ 5.0</span>
               </div>
             </SwiperSlide>
