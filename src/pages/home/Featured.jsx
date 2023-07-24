@@ -4,8 +4,8 @@ const Featured = () => {
   const colleges = [
     {
       name: 'Boston University',
-      imageUrl:
-        'https://www.cnu.org/sites/default/files/styles/public_square_feature_image/public/BostonCollege1.jpg',
+      image:
+        'https://i0.wp.com/whstheshield.com/wp-content/uploads/2020/10/Back2BU-information-site-1.png?resize=768%2C402&ssl=1',
       admissionDates: 'Fall 2023 - Spring 2023',
       events: ['Open House Day', 'Scholarship Fair', 'Alumni Reunion'],
       researchHistory: [
@@ -17,7 +17,7 @@ const Featured = () => {
     },
     {
       name: 'Horizon Campus',
-      imageUrl: 'https://i.ytimg.com/vi/M4gx72b8IbM/maxresdefault.jpg',
+      image: 'https://i.ytimg.com/vi/M4gx72b8IbM/maxresdefault.jpg',
       admissionDates: 'Summer 2023 - Winter 2023',
       events: ['New Student Orientation', 'Career Fair', 'Cultural Fest'],
       researchHistory: [
@@ -29,7 +29,7 @@ const Featured = () => {
     },
     {
       name: 'Lancaster University',
-      imageUrl:
+      image:
         'https://media.studentcrowd.net/q90/content/Pages/Articles/uni-awards-21-uni-pics/lancaster-uni.jpeg',
       admissionDates: 'Spring 2023 - Fall 2023',
       events: [

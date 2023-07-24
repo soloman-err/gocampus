@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 
 const CollegeCard = ({ college }) => {
-  console.log(college);
 
   return (
     <div className="w-[80%] md:w-full xl:w-[80%] mx-auto flex flex-col justify-between bg-white shadow-lg overflow-hidden h-full">
