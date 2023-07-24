@@ -21,7 +21,7 @@ const Header = () => {
           <ul className="hidden md:flex flex-col md:flex-row gap-3 xl:gap-5 xl:text-lg uppercase">
             <NavLink to={'/'}>Home</NavLink>
             <NavLink to={'colleges'}>Colleges</NavLink>
-            <NavLink>Admission</NavLink>
+            <NavLink to={'admission'}>Admission</NavLink>
             <NavLink>My College</NavLink>
             <NavLink>Blog</NavLink>
           </ul>
