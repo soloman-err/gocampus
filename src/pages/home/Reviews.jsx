@@ -23,7 +23,7 @@ const Reviews = () => {
       id: 2,
       collegeName: 'Robert Wilson',
       review:
-        'ETH Zurich College provided a supportive learning environment. However, the course offerings could be more diverse.',
+        'ETH Zurich provided a supportive learning environment. However, the course offerings could be more diverse.',
       rating: 3.8,
     },
     {
@@ -89,11 +89,11 @@ const Reviews = () => {
   useEffect(() => {
     const updateSlidesPerView = () => {
       const screenWidth = window.innerWidth;
-      if (screenWidth >= 1280){
-        setSlidesPerView(3)
+      if (screenWidth >= 1280) {
+        setSlidesPerView(3);
       } else if (screenWidth >= 768) {
         setSlidesPerView(3);
-      } else{
+      } else {
         setSlidesPerView(1);
       }
     };
@@ -110,12 +110,12 @@ const Reviews = () => {
     };
   }, []);
 
-
   return (
     <section className="w-[80%] lg:w-[60%] mx-auto bg-white pb-10 mt-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl lg:text-3xl
-         font-bold text-center mb-4">College Reviews</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center text-zinc-800">
+          Campus Reviews
+        </h2>
         <Swiper
           spaceBetween={30}
           slidesPerView={slidesPerView}
@@ -135,9 +135,7 @@ const Reviews = () => {
               className="bg-gray-100 p-4 shadow-md rounded-lg"
               key={review.id}
             >
-              <h3 className="text-xl font-bold mb-2">
-                {review?.collegeName}
-              </h3>
+              <h3 className="text-xl font-bold mb-2">{review?.collegeName}</h3>
               <p className="mb-4">{review?.review}</p>
               <div className="flex items-center">
                 <span className="mr-2">Rating:</span>

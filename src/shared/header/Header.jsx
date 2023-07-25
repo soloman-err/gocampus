@@ -12,7 +12,6 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
-
   const navigate = useNavigate();
 
   // user logout:
@@ -42,9 +41,8 @@ const Header = () => {
     navigate('');
   };
 
-
   return (
-    <header className="md:absolute bg-slate-500 w-full bg-opacity-70 py-2 px-5 z-10 text-white">
+    <header className="md:absolute bg-slate-500 w-full bg-opacity-70 py-3 px-5 z-10 text-white">
       {/* Navigation */}
       <nav className="flex justify-between items-center font-semibold">
         <div className="order-1">
@@ -58,10 +56,10 @@ const Header = () => {
         <div className="order-2">
           <ul className="hidden md:flex flex-col md:flex-row gap-3 xl:gap-5 xl:text-lg uppercase">
             <NavLink to={'/'}>Home</NavLink>
-            <NavLink to={'colleges'}>Colleges</NavLink>
-            <NavLink to={'admission'}>Admission</NavLink>
-            <NavLink>My College</NavLink>
-            <NavLink>Blog</NavLink>
+            <NavLink to={'/colleges'}>Colleges</NavLink>
+            <NavLink to={'/admission'}>Admission</NavLink>
+            <NavLink to={'/my-college'}>My College</NavLink>
+            <NavLink to={'/blog'}>Blog</NavLink>
           </ul>
 
           {/* Toggle nav */}
@@ -98,52 +96,54 @@ const Header = () => {
 
             {/* Nav-links */}
             <ul className="space-y-5">
-              <li>Home</li>
-              <li>Colleges</li>
-              <li>Admission</li>
-              <li>My College</li>
-              <li>Blog</li>
+              <NavLink to={'/'}>Home</NavLink>
+              <NavLink to={'/colleges'}>Colleges</NavLink>
+              <NavLink to={'/admission'}>Admission</NavLink>
+              <NavLink to={'/my-college'}>My College</NavLink>
+              <NavLink to={'/blog'}>Blog</NavLink>
             </ul>
           </div>
         </div>
 
         <div className="order-4 hidden md:flex items-center space-x-1">
-        {user ? (
-          <div className="gap-1 md:flex items-center">
-            <Link to={'/dashboard/profile'}>
-              <img
-                src={user?.photoURL || '/user-demo.png'}
-                title={user?.displayName}
-                alt="user-image"
-                className="w-8 h-8 rounded-full m-1"
-              />
-            </Link>
-            <span className="w-[2px] h-6 bg-slate-400"></span>
-            <Link to={''}>
-              <button onClick={handleLogOut} className="btn btn-sm rounded">
-                Logout
-              </button>
-            </Link>
-          </div>
-        ) : (
-          <>
-            <div className="hidden md:flex">
-              <Link to={'/login'}>
-                <button className="btn btn-sm btn-ghost rounded">login</button>
+          {user ? (
+            <div className="gap-1 md:flex items-center">
+              <Link to={'profile'}>
+                <img
+                  src={user?.photoURL || '/user-demo.png'}
+                  title={user?.displayName}
+                  alt="user-image"
+                  className="w-8 h-8 object-cover rounded-full m-1"
+                />
               </Link>
               <span className="w-[2px] h-6 bg-slate-400"></span>
-              <Link to={'/register'}>
-                <button className="btn btn-sm btn-ghost rounded">
-                  Register
+              <Link to={''}>
+                <button onClick={handleLogOut} className="btn btn-sm rounded">
+                  Logout
                 </button>
               </Link>
             </div>
-            <div className="md:hidden">
-              <h2 className="font-bold text-xl uppercase">oldschool</h2>
-            </div>
-          </>
-        )}
-      </div>
+          ) : (
+            <>
+              <div className="hidden md:flex">
+                <Link to={'/login'}>
+                  <button className="btn btn-sm btn-ghost rounded">
+                    login
+                  </button>
+                </Link>
+                <span className="w-[2px] h-6 bg-slate-400"></span>
+                <Link to={'/register'}>
+                  <button className="btn btn-sm btn-ghost rounded">
+                    Register
+                  </button>
+                </Link>
+              </div>
+              <div className="md:hidden">
+                <h2 className="font-bold text-xl uppercase">oldschool</h2>
+              </div>
+            </>
+          )}
+        </div>
 
         {/* Toggle bar */}
         <div onClick={handleToggle} className="md:hidden order-3">

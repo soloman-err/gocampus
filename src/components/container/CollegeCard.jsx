@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const CollegeCard = ({ college }) => {
+const CollegeCard = ({college}) => {
 
   return (
     <div className="w-[80%] md:w-full xl:w-[80%] mx-auto flex flex-col justify-between bg-white shadow-lg overflow-hidden h-full">
@@ -43,7 +43,7 @@ const CollegeCard = ({ college }) => {
         </div>
       </div>
 
-      <Link to={'/college-details'}>
+      <Link to={"/college-details"} state={{college}}>
         <button className="btn w-full btn-sm rounded-none mt-auto">
           Details
         </button>

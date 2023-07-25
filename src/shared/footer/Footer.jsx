@@ -1,14 +1,21 @@
+import {
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaLinkedin,
+  FaTwitterSquare,
+} from 'react-icons/fa';
+
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-12">
+    <footer className="bg-gray-800 text-white pt-12 pb-5">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Footer Section 1 */}
           <div>
             <h3 className="text-2xl font-semibold mb-4">GoCampus</h3>
             <p className="text-sm text-gray-300">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              vitae justo eget risus egestas vehicula.
+              Where Dreams Soar and Knowledge Thrives. Embrace the Journey of
+              Education and Success.
             </p>
           </div>
 
@@ -25,30 +32,30 @@ const Footer = () => {
           {/* Footer Section 3 */}
           <div>
             <h4 className="text-xl font-semibold mb-4">Follow Us</h4>
-            <div className="flex space-x-4">
+            <div className="flex flex-row gap-1">
               <a
                 href="#"
                 className="text-gray-300 hover:text-blue-500 transition-colors"
               >
-                Facebook
+                <FaFacebookSquare size={22} />
               </a>
               <a
                 href="#"
                 className="text-gray-300 hover:text-blue-500 transition-colors"
               >
-                Twitter
+                <FaTwitterSquare size={22} />
               </a>
               <a
                 href="#"
                 className="text-gray-300 hover:text-blue-500 transition-colors"
               >
-                Instagram
+                <FaInstagramSquare size={22} />
               </a>
               <a
                 href="#"
                 className="text-gray-300 hover:text-blue-500 transition-colors"
               >
-                LinkedIn
+                <FaLinkedin size={22} />
               </a>
             </div>
           </div>
@@ -62,7 +69,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-300 hover:text-blue-500 transition-colors"
                 >
-                  Home
+                  Research Papers
                 </a>
               </li>
               <li>
@@ -70,7 +77,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-300 hover:text-blue-500 transition-colors"
                 >
-                  About Us
+                  Publications
                 </a>
               </li>
               <li>
@@ -78,7 +85,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-300 hover:text-blue-500 transition-colors"
                 >
-                  Programs
+                  Events
                 </a>
               </li>
               <li>
@@ -86,7 +93,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-300 hover:text-blue-500 transition-colors"
                 >
-                  Admissions
+                  Library
                 </a>
               </li>
               <li>
@@ -94,7 +101,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-300 hover:text-blue-500 transition-colors"
                 >
-                  Contact
+                  FAQs
                 </a>
               </li>
             </ul>
@@ -102,7 +109,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-gray-700 mt-12 pt-6 text-center md:text-left">
+        <div className="border-t border-gray-700 mt-5 pt-5 text-center md:text-left">
           <p className="text-sm text-gray-300">
             &copy; {new Date().getFullYear()} GoCampus. All rights reserved.
           </p>
